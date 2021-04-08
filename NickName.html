@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>SSM - 닉네임페이지</title>
+        <style>
+            .textbox { 
+                position:absolute; 
+                top : 320px;
+                left : 665px;}
+
+            .check {
+                background-color:transparent;
+                border:0px transparent solid;
+                color:white;
+            }
+            
+            .next {
+                position:absolute; 
+                left : 980px;
+                top : 700px;
+                background-color:transparent;
+                border:0px transparent solid;
+                color:white;
+            }
+            p {
+                position:absolute;
+                left: 670px;
+                top: 250px;
+                font-size: 20px;
+                text-align: center;
+                color:white;
+            }
+        </style>
+
+    </head>
+    <body style="background-color:black">
+        <p>이름을 입력해주세요.</p>
+        <div class="textbox">
+            <input type="text" name="nickname">
+            <input class= "check" type=submit  value="확인" > 
+        </div>
+        <button class="next" onclick="location.href='Lanking.html'">다음</button >
+    </body>
+</html>
