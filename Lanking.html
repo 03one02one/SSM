@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>SSM - 랭킹페이지</title>
+        <style>
+            .btn {
+                background:white;
+                border-radius: 5px;
+                color:black;
+            }
+            .textbox { 
+                position:absolute; 
+                top : 320px;
+                left : 665px;}
+
+            .check {
+                background-color:transparent;
+                border:0px transparent solid;
+                color:white;
+            }
+            
+            .next {
+                position:absolute; 
+                left : 980px;
+                top : 700px;
+                background-color:transparent;
+                border:0px transparent solid;
+                color:white;
+            }
+
+            .modal-wrapper {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                display: none;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .modal-box {
+                background: white;
+                width: 380px;
+                height: 300px;
+                border-radius: 10px;
+            }
+
+            .modal-title,
+            .modal-content {
+                text-align: center;
+            }
+
+            .modal-close-box-bg {
+                background-color:transparent;
+                border:0px transparent solid;
+            }
+
+            .modal-open-btn-bg {
+                position:absolute;
+                left : 665px;
+                top : 50px;
+                width:200px;
+                height:40px;
+                background-color: white;
+                border-radius: 50px;
+            }
+
+            .modal-close-box {
+                position: fixed;
+                left:900px;
+                top:245px;
+                text-align: right;
+            }
+
+            p {
+                position:absolute;
+                left: 670px;
+                top: 250px;
+                font-size: 20px;
+                text-align: center;
+                color:white;
+            }
+        </style>
+
+    </head>
+    <body style="background-color:black">
+       <button class="modal-open-btn-bg" id="modal-open-btn">가장 많이 간 나라 순위</button>
+
+       <div class="modal-wrapper">
+         <div class="modal-box">
+           <h3 class="modal-title">가장 많이 간 나라</h3>
+                <b style="margin-left: 90px; margin-top: 25px; color:black;">1위</b>
+                <b style="margin-left: 146px; margin-top: 25px; color:black;">2위</b>
+                <img src="picture/japane.PNG" width="150px" height="150px" style="margin-top: 10px; margin-left: 30px;">
+                <img src="picture/amrica.PNG" width="150px" height="150px" style="margin-left: 20px;">
+                <b style="margin-left: 85px;  color:black;">일본</b>
+                <b style="margin-left: 141px;  color:black;">미국</b>
+           <div class="modal-close-box">
+             <button class="modal-close-box-bg" id="modal-close-btn">닫기</button>
+           </div>
+         </div>
+       </div>
+       <script>
+        const modalOpenBtn = document.getElementById("modal-open-btn");
+        const modalCloseBtn = document.getElementById("modal-close-btn");
+        const modalWrapper = document.querySelector(".modal-wrapper");
+  
+        console.log(modalWrapper.style);
+  
+        modalOpenBtn.addEventListener("click", () => {
+          modalWrapper.style.display = "flex";
+        });
+  
+        modalCloseBtn.addEventListener("click", () => {
+          modalWrapper.style.display = "none";
+        });
+    </script>
+    </body>
+</html>
