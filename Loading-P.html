@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>SSM - 로딩페이지</title>
+        <meta http-equiv="refresh" content="5;url=trip/Philippines.html">
+        <style>
+            .loading {
+                text-align: center;
+                position: absolute;
+                left : 550px;
+                background-image: url('picture/sky.jpg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 550px;
+                width: 480px;
+                height: 730px;
+            }
+
+            .container {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+        </style>
+
+    </head>
+    <body style="background-color:black; overflow-x: hidden;" onload="javascript:window_onload()">
+        <div class="loading">
+            <div class="container">
+                <div class="spinner" style="color: cornflowerblue;">
+                    <i class="fas fa-spinner fa-3x fa-spin"></i>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
