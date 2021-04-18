@@ -5,119 +5,104 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>SSM - 랭킹페이지</title>
         <style>
-            .btn {
-                background:white;
+            .other-bg {
+                background-color: rgb(255, 255, 255);
+                color : black;
                 border-radius: 5px;
-                color:black;
-            }
-            .textbox { 
-                position:absolute; 
-                top : 320px;
-                left : 665px;}
-
-            .check {
-                background-color:transparent;
-                border:0px transparent solid;
-                color:white;
-            }
-            
-            .next {
-                position:absolute; 
-                left : 980px;
-                top : 700px;
-                background-color:transparent;
-                border:0px transparent solid;
-                color:white;
-            }
-
-            .modal-wrapper {
                 position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: rgba(0, 0, 0, 0.5);
-                display: none;
+                left: 510px;
+                width: 530px;
+                height: 250px;
+            }
+
+            .lank-bg {
+                background-color: rgb(255, 255, 255);
+                color : black;
+                border-radius: 5px;
+                position: fixed;
+                top: 350px;
+                left: 510px;
+                width: 530px;
+                height: 250px;
                 justify-content: center;
                 align-items: center;
             }
 
-            .modal-box {
-                background: white;
-                width: 380px;
+            .pie-chart {
+                position: relative;
+                display:inline-block;
+                width: 300px;
                 height: 300px;
-                border-radius: 10px;
-            }
-
-            .modal-title,
-            .modal-content {
-                text-align: center;
-            }
-
-            .modal-close-box-bg {
-                background-color:transparent;
-                border:0px transparent solid;
-            }
-
-            .modal-open-btn-bg {
-                position:absolute;
-                left : 665px;
-                top : 50px;
-                width:200px;
-                height:40px;
-                background-color: white;
-                border-radius: 50px;
-            }
-
-            .modal-close-box {
-                position: fixed;
-                left:900px;
-                top:245px;
-                text-align: right;
-            }
-
-            p {
-                position:absolute;
-                left: 670px;
-                top: 250px;
-                font-size: 20px;
-                text-align: center;
-                color:white;
+                border-radius: 50%;
+                transition: 0.3s;
+                }
+                span.center{
+                background: #fff;
+                display : block;
+                position: absolute;
+                top:50%; left:50%;
+                width:200px; height:200px;
+                border-radius: 50%;
+                text-align:center; line-height: 200px;
+                font-size:30px;
+                transform: translate(-50%, -50%);
             }
         </style>
 
     </head>
     <body style="background-color:black">
-       <button class="modal-open-btn-bg" id="modal-open-btn">가장 많이 간 나라 순위</button>
+       <div class="lank-bg">
+           <h3 style="text-align: center;">가장 많이 간 나라</h3>
+           <b style="position: absolute; left: 85px;">1위</b>      
+           <b style="position: absolute; left: 255px;">2위</b>      
+           <b style="position: absolute; left: 425px;">3위</b>  
+           <b style="position: absolute; left: 82px; top:100px">일본</b>      
+           <b style="position: absolute; left: 252px; top:100px">영국</b>      
+           <b style="position: absolute; left: 422px; top:100px">미국</b>  
+            <div class="pie-chart pie-chart1"><span class="center">80%</span></div>
+            <script>
+                $(window).ready(function(){
+                    draw(80, '.pie-chart1', '#ccc');
+                draw(50, '.pie-chart2', '#8b22ff');
+                draw(30, '.pie-chart3','#ff0');
+                });
+                
+                function draw(max, classname, colorname){
+                    var i=1;
+                    var func1 = setInterval(function(){
+                    if(i<max){
+                        color1(i,classname,colorname);
+                        i++;
+                    } else{
+                        clearInterval(func1);
+                    }
+                    },10);
+                }
+                function color1(i, classname,colorname){
+                    $(classname).css({
+                        "background":"conic-gradient("+colorname+" 0% "+i+"%, #ffffff "+i+"% 100%)"
+                    });
+                }
+                
+                
+                function replay(){
+                draw(80, '.pie-chart1', '#ccc');
+                draw(50, '.pie-chart2', '#8b22ff');
+                draw(30, '.pie-chart3','#ff0');
+                }
+            </script>
+            <a href="javascript:replay()">다시그리기</a>
+        </div>
 
-       <div class="modal-wrapper">
-         <div class="modal-box">
-           <h3 class="modal-title">가장 많이 간 나라</h3>
-                <b style="margin-left: 90px; margin-top: 25px; color:black;">1위</b>
-                <b style="margin-left: 146px; margin-top: 25px; color:black;">2위</b>
-                <img src="picture/japane.PNG" width="150px" height="150px" style="margin-top: 10px; margin-left: 30px;">
-                <img src="picture/amrica.PNG" width="150px" height="150px" style="margin-left: 20px;">
-                <b style="margin-left: 85px;  color:black;">일본</b>
-                <b style="margin-left: 141px;  color:black;">미국</b>
-           <div class="modal-close-box">
-             <button class="modal-close-box-bg" id="modal-close-btn">닫기</button>
-           </div>
-         </div>
-       </div>
        <script>
-        const modalOpenBtn = document.getElementById("modal-open-btn");
-        const modalCloseBtn = document.getElementById("modal-close-btn");
-        const modalWrapper = document.querySelector(".modal-wrapper");
-  
-        console.log(modalWrapper.style);
-  
-        modalOpenBtn.addEventListener("click", () => {
-          modalWrapper.style.display = "flex";
-        });
-  
-        modalCloseBtn.addEventListener("click", () => {
-          modalWrapper.style.display = "none";
-        });
-    </script>
+           function printName()  {
+            const name = document.getElementById('name').value;
+            document.getElementById("result").innerText = name;
+            }
+       </script>
+       <div class="other-bg">
+           <div id="result"></div>
+           <h3 style="position: absolute; left:20px">의 여행</h3>
+       </div>
     </body>
 </html>
