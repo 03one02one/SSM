@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>SSM - 유니버셜스튜디오 도착!</title>
+        <style>
+            @keyframes blink {
+                0% {background-color: white;}
+                50% {background: rgba(0, 0, 0, .5);}
+            }
+
+            /* for Chrome, Safari */
+            @-webkit-keyframes blink {
+                0% {background-color: white;}
+                50% {background: rgba(0, 0, 0, .5);}
+            }
+
+            /* blink CSS 브라우저 별로 각각 애니메이션을 지정해 주어야 동작 */
+            .blinkcss {
+                font-weight: bold;
+                animation: blink 1s step-end infinite;
+                -webkit-animation: blink 1s step-end infinite;
+            }
+
+             .usj {
+                text-align: center;
+                position: absolute;
+                left : 550px;
+                background-image: url('img/HarryPotter.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 550px;
+                width: 480px;
+                height: 730px;
+            }
+            
+            .next {
+                position:absolute; 
+                background-color:rgba(0, 0, 0, .7);
+                border:0px transparent solid;
+                font-size: 18px;
+                width: 250px;
+                height:35px;
+                border-radius: 15px;
+                color:white;
+            }
+        </style>
+
+    </head>
+    <body style="background-color:black; overflow-x: hidden; overflow-y: hidden;">
+        <div class="tower">
+            <button class="next" onclick="location.href='Pizza.html'" style="top:200px; left:115px;">피자 먹으러 갈까</button >
+            <button class="next" onclick="location.href='Stake.html'" style="top:250px; left:115px;">스테이크 먹으러 갈까 </button >
+        </div>
+
+        </div>
+    </body>
+</html>
