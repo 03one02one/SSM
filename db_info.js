@@ -13,9 +13,9 @@ var dbconnInfo = {
   real: {
     host     : '1.1.1.1',
 		port: '1111',
-		user     : '',
-		password : '',
-		database : '',
+		user     : 'root',
+		password : 'mirim2',
+		database : 'ssmDB',
 		multipleStatements : true
 	}	
 };
