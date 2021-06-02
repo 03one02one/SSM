@@ -8,43 +8,39 @@
             .pos {
                 text-align: center;
                 position: absolute;
-                left : 550px;
-                background-image: url('picture/pos.jpg');
+                left : 400px;
+                background-image: url('picture/ssm.png');
                 background-repeat: no-repeat;
                 background-position: center;
-                background-size: 550px;
-                width: 480px;
+                background-size: 1050px;
+                width: 780px;
                 height: 730px;
             }
 
-            .font { color: black; position: absolute;}
-            
-            .btn {
-                position:absolute; 
-                border:2px solid black;
-                background-color:transparent;
-                font-size: 20px;
-                border-radius: 3px;
-                color:black;
+            input.loc1 {
+                position: relative;
+                width: 180px;
+                height: 110px;
+                top: 245px;
             }
             
-            .btn:hover {
-                color : white;
-                background-color: skyblue;
+            input.loc2 {
+                position: relative;
+                width: 170px;
+                height: 100px;
             }
+              
         </style>
 
     </head>
-    <body style="background-color:black; overflow-x: hidden; overflow-y: hidden;">
+    <body>
             <div class="pos">
-                <h1 class="font" style="left: 170px; top:88px">SSM항공사</h2>
-                <h3 class="font" style="left: 145px; top: 180px">여행지를 선택해주세요.</h3>
-                <button class="btn" onclick="location.href='Loading-J.html'" style="top: 280px; left: 110px;">일본</button >
-                <button class="btn" onclick="location.href='Loading-H.html'" style="top: 280px; left: 220px;">홍콩</button >
-                <button class="btn" onclick="location.href='Loading-p.html'" style="top: 280px; left: 320px;">필리핀</button >
-                <button class="btn" onclick="location.href='Loading-S.html'" style="top: 340px; left: 100px;">싱가포르</button >
-                <button class="btn" onclick="location.href='Loading-UK.html'" style="top: 340px; left: 220px;">영국</button >
-                <button class="btn" onclick="location.href='Loading-U.html'" style="top: 340px; left: 330px;">미국</button >
+                <input type="image" class="loc1" src="picture/japan.png" onclick="location.href='Loading-J.html'" style="left: 75px;">
+                <input type="image" class="loc1" src="picture/usa.png" onclick="location.href='Loading-U.html'" style="left: 85px;">
+                <input type="image" class="loc1" src="picture/uk.png" onclick="location.href='Loading-UK.html'"  style="left: 90px;">
+                <input type="image" class="loc2" src="picture/hongkong.png" onclick="location.href='Loading-H.html'" style="right: 470px; top: 375px;">
+                <input type="image" class="loc2" src="picture/singapore.png" onclick="location.href='Loading-S.html'" style="left: 85px; top: 275px;">
+                <input type="image" class="loc2" src="picture/pilipinas.png" onclick="location.href='Loading-P.html'" style="left: 100px; top: 275px;"> 
             </div>
     </body>
 </html>
