@@ -12,6 +12,8 @@
                 top : 50%; left : 50%;
                 transform: translate(-50%, -50%);
                 width:1200px; height:740px;
+                background: url('img/HarryPotter.png')
+                center center / 100% no-repeat;
             }
             
             .text {
@@ -28,11 +30,31 @@
                 color:rgb(53, 53, 53);
             }
 
+            .btn {
+                /* position:absolute; 
+                top : 50%; left : 50%;
+                transform: translate(-50%, -50%); */
+                background-color:rgba(255, 255, 255, .8);
+                border:0px transparent solid;
+                font-size: 18px;
+                width: 250px;
+                height:35px;
+                border-radius: 8px;
+                color:black;
+            }
+
         </style>
 
     </head>
     <body style="background-color:rgb(233, 247, 255); overflow-x: hidden; overflow-y: hidden;">
-        <input type="image" class="bg" src="img/HarryPotter.png" onclick="location.href='USJ-2.html'">
-        <!-- <p class="text">날씨가 맑아 거리엔 사람이 많았다.</p> -->
+        <div class="bg">
+            <div class="bg">
+                    <div style="float: left; margin-top: 165px; margin-left: 330px;">
+                        <button class="btn" onclick="location.href='Pizza.html'">피자 먹으러 갈까</button >
+                    </div>
+                    <div style="float: right; margin-top: 165px; margin-right: 330px;">
+                        <button class="btn" onclick="location.href='Stake.html'">스테이크 먹으러 갈까</button >
+                    </div>
+            </div>
     </body>
 </html>
