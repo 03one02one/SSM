@@ -3,57 +3,65 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="page-enter" content="blendTrans(duration=0.3)">
+        <meta http-equiv="page-exit" content="blendTrans(duration=0.3)">
         <title>SSM - 유니버셜스튜디오 도착!</title>
         <style>
-            @keyframes blink {
-                0% {background-color: white;}
-                50% {background: rgba(0, 0, 0, .5);}
-            }
-
-            /* for Chrome, Safari */
-            @-webkit-keyframes blink {
-                0% {background-color: white;}
-                50% {background: rgba(0, 0, 0, .5);}
-            }
-
-            /* blink CSS 브라우저 별로 각각 애니메이션을 지정해 주어야 동작 */
-            .blinkcss {
-                font-weight: bold;
-                animation: blink 1s step-end infinite;
-                -webkit-animation: blink 1s step-end infinite;
-            }
-
-             .usj {
-                text-align: center;
+             .bg {
                 position: absolute;
-                left : 550px;
-                background-image: url('img/HarryPotter.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: 550px;
-                width: 480px;
-                height: 730px;
+                top : 50%; left : 50%;
+                transform: translate(-50%, -50%);
+                width:1200px; height:740px;
+                background: url('img/HarryPotter.png')
+                center center / 100% no-repeat;
             }
             
+            .text {
+                position:absolute; 
+                top : 10%;
+                left : 40%; 
+                font-size: 15px;
+                font-weight: 600;
+                padding: 10px 0px;
+                background-color: white;
+                width: 250px; height:20px;
+                text-align: center;
+                border:0px transparent solid;
+                color:rgb(53, 53, 53);
+            }
+
             .next {
                 position:absolute; 
-                background-color:rgba(0, 0, 0, .7);
+                left : 95%;
+                top : 5%;
+                font-weight: 600;
+                background-color:transparent;
                 border:0px transparent solid;
-                font-size: 18px;
-                width: 250px;
-                height:35px;
-                border-radius: 15px;
-                color:white;
+                color:black;
             }
         </style>
 
     </head>
-    <body style="background-color:black; overflow-x: hidden; overflow-y: hidden;">
-        <div class="tower">
-            <button class="next" onclick="location.href='Pizza.html'" style="top:200px; left:115px;">피자 먹으러 갈까</button >
-            <button class="next" onclick="location.href='Stake.html'" style="top:250px; left:115px;">스테이크 먹으러 갈까 </button >
-        </div>
-
+    <body style="background-color:rgb(233, 247, 255); overflow-x: hidden; overflow-y: hidden;">
+        <div class="bg">
+            <div class="bg">
+                <p class="text">드디어 도착했다..</p>
+                <button class="next" onclick="location.href='911-1.html'">다음</button >
+            </div>
+            <!-- <script>
+                var  typing = setTimeout(function () {
+                    var x = "드디어 도착했다..";
+                    var i = 0;
+                    function typeWriter() {
+                        if(i < x.length) {
+                            document.getElementById("typing").innerHTML += x[i];
+                            i++;
+                            setTimeout(typeWriter, 300);
+                        }
+                    }
+                typeWriter()
+                }, 2000);
+            </script> -->
         </div>
     </body>
 </html>
