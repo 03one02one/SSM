@@ -1,0 +1,141 @@
+.bg {
+    position: relative;
+    left:170px;
+    width:1200px; height:740px;
+    opacity: 0.6;
+}
+
+.next {
+    position:absolute; 
+    background-color:rgba(0, 0, 0, .8);
+    border:0px transparent solid;
+    font-size: 20px;
+    width: 180px;
+    height: 65px;
+    border-radius: 20px;
+    color:white;
+    animation: fadein 2s;
+}
+.next1 { top:400px; left:560px; }
+
+.next2 { top:400px; left:805px; }
+
+.text {
+    position:relative; 
+    top:210px;
+    left : 560px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0px;
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    width: 400px; height:140px;
+    padding-top: 50px;
+    line-height:180%;
+    text-align: center;
+    color:black;
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+.words {
+    display: inline-block;
+    position:relative; 
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .7);
+    border-color: rgba(0, 0, 0, .7);
+    border-style: solid;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    color:rgba(0, 0, 0, .7);
+    padding: 10px;
+    animation: fadein 3s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-fill-mode: both;
+}
+
+.words1 {
+    line-height:180%; width: 180px; height: 110px; 
+    padding-top: 45px; bottom: 150px; left: 1050px;
+    animation-delay: 1s;
+}
+
+.words2 {
+    line-height:180%; width: 250px; height: 150px; 
+    padding-top: 60px; bottom: 120px; right: 0px;
+    animation-delay: 2s;
+}
+
+.words3 {
+    line-height:180%; width: 180px; height: 110px; 
+    padding-top: 50px; bottom: -20px; right: 230px;
+    animation-delay: 3s;
+}
+
+.words4 {
+    line-height:180%; width: 200px; height: 120px; 
+    padding-top: 60px; bottom: 0px; left: 380px;
+    animation-delay: 4s;
+}
+
+@keyframes wiggle {
+    0% { margin-left: 0px;}
+    100% {margin-left: 15px;}
+}
+
+.move {
+    display: inline-block;
+    animation: wiggle 0.11s linear 0s alternate;
+    animation-iteration-count: 16;
+}
+
+.kakao {
+    top:50px;
+    left: 1250px;
+    animation: fadein 2s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-fill-mode: both;
+}
+
+.circle {
+    top:40px;
+    left: 1300px;
+    background-color:red;
+    width:25px;
+    height:22px;
+    border-radius:75px;
+    text-align:center;
+    padding-top: 3px;
+    font-size:13px;
+    font-weight: 600;
+    color: white;
+    animation-delay: 2s;
+}
+
+.think {
+    position:relative; 
+    top:210px;
+    left : 560px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0px;
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    width: 400px; height:140px;
+    padding-top: 50px;
+    line-height:180%;
+    text-align: center;
+    color:black;
+    animation-delay: 3.5s;
+}
