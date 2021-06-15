@@ -2,40 +2,34 @@
 <html lang="ko">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/Japan.css">
+        <script type="text/javascript" src="Js/Typing.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>SSM - 일본공항 도착!</title>
+        <meta http-equiv="page-enter" content="blendTrans(duration=0.3)">
+        <meta http-equiv="page-exit" content="blendTrans(duration=0.3)">
+        <title>SSM - 스카이트리 도착!</title>
         <style>
-             .tower {
-                text-align: center;
+            .background {
                 position: absolute;
-                left : 550px;
-                background-image: url('img/dokyotower.jpg');
+                top : 50%; left : 50%;
+                transform: translate(-50%, -50%);
+                background-size: 1180px;
+                width:1200px; height:740px;
+                background-image: url('img/TokyoTower.png');
                 background-repeat: no-repeat;
                 background-position: center;
-                background-size: 550px;
-                width: 480px;
-                height: 730px;
-            }
-            
-            .next {
-                /* position:absolute; 
-                top : 50%; left : 50%;
-                transform: translate(-50%, -50%); */
-                background-color:rgba(255, 255, 255, .8);
-                border:0px transparent solid;
-                font-size: 18px;
-                width: 200px;
-                height:35px;
-                border-radius: 8px;
-                color:black;
+                opacity: 0.7;
             }
         </style>
-
     </head>
-    <body style="background-color:rgb(233, 247, 255); overflow-x: hidden; overflow-y: hidden;">
-        <div class="tower">
-            <button class="next" onclick="location.href='Japan-Eel.html'" style="top:200px; left:115px;">장어덮밥 먹으러 갈까</button >
-            <button class="next" onclick="location.href='Japan-Conbini.html'" style="top:250px; left:115px;">편의점 음식 먹으러 갈까 </button >
+    <body style="background-color:rgb(233, 247, 255); overflow-x: hidden; overflow-y: hidden; ">
+        <div style="position: absolute; z-index: 3;">
+            <button class="next next1" onclick="location.href='/SSM/Japan/Japan-Unagikigugawa-1.html'">장어덮밥</button >
+            <button class="next next2" onclick="location.href='/SSM/USA/Japan-Conveni-1.html'">편의점</button >
         </div>
+        <div style="position: absolute; z-index: 2; top: 480px; left: 640px;">
+            <p class="text" style='width: 250px; height: 80px; right: 40px; padding-top: 20px;'>야경 보니까 배고프다..<br>무엇을 먹을까?</p>
+        </div>
+        <div class="background"></div>
     </body>
 </html>
