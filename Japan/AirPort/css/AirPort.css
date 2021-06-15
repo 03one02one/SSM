@@ -1,8 +1,9 @@
 .bg {
-    position: relative;
-    left:170px;
+    position: absolute;
+    top : 50%; left : 50%;
+    transform: translate(-50%, -50%);
     width:1200px; height:740px;
-    opacity: 0.6;
+    opacity: 0.7;
 }
 
 .next {
@@ -16,14 +17,15 @@
     color:white;
     animation: fadein 2s;
 }
-.next1 { top:400px; left:560px; }
+.next1 { top:500px; left:720px; }
 
-.next2 { top:400px; left:805px; }
+.next2 { top:500px; left:985px; }
+
 
 .text {
     position:relative; 
-    top:210px;
-    left : 560px;
+    bottom: 150px;
+    left : 190px;
     font-size: 20px;
     font-weight: 600;
     padding: 10px 0px;
@@ -100,16 +102,16 @@
 }
 
 .kakao {
-    top:50px;
-    left: 1250px;
+    top:150px;
+    left: 1450px;
     animation: fadein 2s;
     animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
     animation-fill-mode: both;
 }
 
 .circle {
-    top:40px;
-    left: 1300px;
+    top:140px;
+    left: 1500px;
     background-color:red;
     width:25px;
     height:22px;
