@@ -2,68 +2,18 @@
 <html lang="ko">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/Loading.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta http-equiv="page-enter" content="blendTrans(duration=0.3)">
         <meta http-equiv="page-exit" content="blendTrans(duration=0.3)">
         <title>SSM - 비행기 안!</title>
-        <style>
-            .bg {
-                position: absolute;
-                top : 50%; left : 50%;
-                transform: translate(-50%, -50%);
-                width:1200px; height:740px;
-                opacity: 0.7;
-            }
-            
-            .name {
-                position: relative;
-                bottom: 82px;
-                right : 65px;
-                font-size: 18px;
-                font-weight: 600;
-                padding: 10px 10px;
-                width: 85px; height:16px;
-                text-align: center;
-                border-radius: 10px 10px 0px 0px;
-                background-color: black;
-                color:white;
-            }
-
-            .text {
-                position:relative; 
-                bottom: 100px;
-                right : 80px;
-                font-size: 18px;
-                font-weight: 600;
-                padding: 10px 0px;
-                background-color: rgba(0, 0, 0, .8);
-                width: 550px; height:100px;
-                text-align: center;
-                border-radius: 15px;
-                color:white;
-            }
-
-            .btn {
-                /* position:absolute; 
-                top : 50%; left : 50%;
-                transform: translate(-50%, -50%); */
-                background-color:rgba(255, 255, 255, .8);
-                border:0px transparent solid;
-                font-size: 18px;
-                width: 250px;
-                height:35px;
-                border-radius: 8px;
-                color:black;
-            }
-        </style>
-
     </head>
     <body style="background-color:rgb(233, 247, 255); overflow-x: hidden; overflow-y: hidden;">
-        <div style="position: relative; z-index: 2; top: 210px; left: 780px;">
-            <img src="img/stewardess.png" width="400">
+        <div class="item">
+            <div class="image"> <img src="img/stewardess.png" width="400"></div>
             <p class="name">승무원</p>
             <p class="text" style='line-height:180%'>손님 여러분, <br>도쿄 나리타 국제공항까지 가는 대한항공 017편,<br>잠시 후에 출발 하겠습니다.</p>
         </div>
-            <input type="image" class="bg" src="img/inflight.jpg" onclick="location.href='Loading-J2.html'">
+        <input type="image" class="bg" src="img/inflight.jpg" onclick="location.href='Loading-J2.html'">
     </body>
 </html>

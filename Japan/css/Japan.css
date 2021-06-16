@@ -6,6 +6,12 @@
     opacity: 0.7;
 }
 
+.item {
+    position: relative;
+    padding: 13% 0 0 41%;
+    z-index: 2; 
+}
+
 .next {
     position:absolute; 
     background-color:rgba(0, 0, 0, .8);
@@ -17,9 +23,9 @@
     color:white;
     animation: fadein 2s;
 }
-.next1 { top:500px; left:720px; }
+.next1 { top:500px; left:750px; }
 
-.next2 { top:500px; left:985px; }
+.next2 { top:500px; left:1030px; }
 
 .speak {
     position:relative; 
@@ -37,9 +43,9 @@
 }
 
 .text {
-    position:relative; 
-    bottom: 150px;
-    left : 190px;
+    position: absolute;
+    right: 39%;
+    bottom : -130%;
     font-size: 20px;
     font-weight: 600;
     padding: 10px 0px;

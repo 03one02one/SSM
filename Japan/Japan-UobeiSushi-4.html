@@ -8,6 +8,11 @@
         <meta http-equiv="page-exit" content="blendTrans(duration=0.3)">
         <title>SSM - 스시집 도착!</title>
         <style>
+            .item {
+                position: relative;
+                padding: 13% 0 0 41%;
+                z-index: 2; 
+            }
             .bg {
                 position: absolute;
                 top : 50%; left : 50%;
@@ -17,9 +22,9 @@
             }
 
             .name {
-                position: relative;
-                bottom: 82px;
-                right : 65px;
+                position: absolute;
+                right: 56%;
+                bottom: -2.5%;
                 font-size: 18px;
                 font-weight: 600;
                 padding: 10px 10px;
@@ -31,9 +36,9 @@
             }
 
             .text {
-                position:relative; 
-                bottom: 100px;
-                right : 80px;
+                position: absolute;
+                right: 33%;
+                bottom: -24.5%;
                 font-size: 18px;
                 font-weight: 600;
                 padding: 10px 0px;
@@ -44,10 +49,9 @@
                 color:white;
             }
         </style>
-
     </head>
     <body style="background-color:rgb(233, 247, 255); overflow-x: hidden; overflow-y: hidden;">
-        <div style="position: relative; z-index: 2; top: 250px; left: 780px;">
+        <div class="item">
             <img src="img/Employee.png" width="400">
             <p class="name">직원</p>
             <p class="text" style='line-height:180%; height: 90px;  padding-top: 30px;'>何名様ですか？<br>(몇 분이십니까?)</p>

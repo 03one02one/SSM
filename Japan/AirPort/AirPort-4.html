@@ -10,58 +10,13 @@
 
         <style>
              @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&display=swap');
-
-            .name {
-                position: relative;
-                top:250px;
-                left : 550px;
-                font-size: 15px;
-                font-weight: 600;
-                padding: 10px 10px;
-                width: 190px; height:20px;
-                text-align: center;
-                border-radius: 8px;
-                background:white;
-                color: black;
-                animation: fadein 2s;
-            }
-
-            .balloon {
-                position:relative;
-                top:255px;
-                left : 500px;
-                margin: 50px;
-                width:400px;
-                height:120px;
-                background:white;
-                text-align: center;
-                line-height:160%;
-                font-size: 18px;
-                font-weight: 500;
-                padding-top: 30px;
-                border-radius: 10px;
-                animation: fadein 2s;
-            }
-
-            .balloon:after {
-                border-top:15px solid white;
-                border-left: 15px solid transparent;
-                border-right: 0px solid transparent;
-                border-bottom: 0px solid transparent;
-                content:"";
-                position:absolute;
-                top:10px;
-                left:-15px;
-            }
         </style>
     </head>
     <body style="background-color:rgb(233, 247, 255); overflow-x: hidden; overflow-y: hidden;">
-        <div style="position: absolute; z-index: 3; top: 110px; left: 230px;">
+        <div class="item">
             <div class="name" style="font-family: Kiwi Maru;">스즈키 마코토 (픽업 아저씨)</div>
-        </div>
-        <div style="position: absolute; z-index: 2; top: 110px; left: 230px;">
             <div class="balloon">공항에 도착하셨나요?<br>저는 지금 공항 밖에 있습니다.<br>만약 도착하셨으면 연락 바랍니다.</div>
         </div>
-            <input type="image" class="bg" src="airport.jpg" style="filter: brightness(60%); opacity: 1;" onclick="location.href='AirPort-5.html'">
+        <input type="image" class="bg" src="airport.jpg" style="filter: brightness(60%); opacity: 1;" onclick="location.href='AirPort-5.html'">
     </body>
 </html>
