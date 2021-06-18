@@ -9,25 +9,24 @@
         <title>SSM - 공항 도착!</title>
         <style>
             .background {
-                position: relative;
-                left:170px;
+                position: absolute;
+                top : 50%; left : 50%;
+                transform: translate(-50%, -50%);
+                background-size: contain;
+                width:1200px; height:740px;
                 background-image: url('airport.jpg');
                 background-repeat: no-repeat;
                 background-position: center;
-                background-size: 1150px;
-                width:1200px; height:740px;
-                opacity: 0.6;
+                opacity: 0.7;
             }
         </style>
         
     </head>
-    <body style="background-color:rgb(233, 247, 255); overflow-x: hidden; overflow-y: hidden; ">
-        <div style="position: absolute; z-index: 3;">
+    <body style="background-color:rgb(94, 155, 190); overflow-x: hidden; overflow-y: hidden; ">
+        <div class="item">
             <button class="next next1" onclick="location.href='/SSM/USA/USJ.html'">테마파크</button >
             <button class="next next2" onclick="location.href='/SSM/USA/911.html'">박물관</button >
-        </div>
-        <div style="position: absolute; z-index: 2; left:90px;">
-            <p class="text" style='width: 250px; height: 70px; top:200px; padding-top: 40px;'>어디 먼저 가볼까?</p>
+            <p class="text" style='bottom : -100%; right:43%; width: 250px; height: 70px; padding-top: 40px;'>어디 먼저 가볼까?</p>
         </div>
         <div class="background"></div>
     </body>
