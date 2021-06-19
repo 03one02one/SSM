@@ -1,5 +1,23 @@
 {
   "dependencies": {
+    "firebase": "^8.6.8",
     "mysql": "^2.18.1"
-  }
+  },
+  "name": "ssm",
+  "version": "1.0.0",
+  "main": "graph.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/03one02one/SSM.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/03one02one/SSM/issues"
+  },
+  "homepage": "https://github.com/03one02one/SSM#readme",
+  "description": ""
 }
