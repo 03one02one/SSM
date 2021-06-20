@@ -1,41 +1,18 @@
 <!DOCTYPE html>
 <html lang="ko">
     <head>
-        <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/Japan.css">
+        <script type="text/javascript" src="Js/Typing.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>SSM - 로딩페이지</title>
-        <meta http-equiv="refresh" content="5;url=Japan-Sensoji-8.html">
-        <style>
-            .loading {
-                position: absolute;
-                top : 50%; left : 50%;
-                transform: translate(-50%, -50%);
-                background-size: 1200px;
-                width:1200px; height:730px;
-                background-image: url('img/Sensoji.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                opacity: 0.7;
-            }
-
-            .container {
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        </style>
-
+        <meta http-equiv="page-enter" content="blendTrans(duration=0.3)">
+        <meta http-equiv="page-exit" content="blendTrans(duration=0.3)">
+        <title>SSM - 센소지(아사쿠사) 도착!</title>
     </head>
-    <body style="background-color:rgb(233, 247, 255); overflow-x: hidden;" onload="javascript:window_onload()">
-        <div class="loading">
-            <div class="container">
-                <div class="spinner" style="color: red;">
-                    <i class="fas fa-spinner fa-3x fa-spin"></i>
-                </div>
-            </div>
+    <body style="background-color:rgb(233, 247, 255); overflow-x: hidden; overflow-y: hidden;">
+        <div class="item">
+            <p class="text" style='width: 250px; height: 85px; right: 42%; line-height:180%; padding-top: 30px;'>나도 여기서 <br>사진 찍고 가야겠다!</p>
         </div>
+        <input type="image" class="bg" src="img/Sensoji.png" onclick="location.href='Japan-Sensoji-7.html'">
     </body>
 </html>
