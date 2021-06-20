@@ -1,0 +1,91 @@
+.text {
+    position: relative;
+    text-align: center;
+    border: 1px solid #00ff0000;
+    animation: fadein 2s;
+}
+
+.lank-bg {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 40px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 650px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    animation: fadein 2s;
+}
+
+.lanking {
+    position: absolute;
+    bottom: -100%;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0, 102, 255);
+    animation: fadein 2s;
+}
+
+.lanking1 { right: 85%; } 
+.lanking2 { right: 54%; }
+.lanking3 { right: 23%; }
+
+.country {
+    position: absolute;
+    bottom: -123%;
+    font-size: 30px;
+    font-weight: 600;
+    animation: fadein 2s;
+}
+
+.country1 { right: 73% }
+.country2 { right: 42% }
+.country3 { right: 11% }
+
+.result {
+    position: absolute;
+    bottom: -140%;
+    font-size: 18px;
+    font-weight: 600;
+    color: gray;
+    animation: fadein 2s;
+}
+
+.result1 { right: 71.5% }
+.result2 { right: 40.5% }
+.result3 { right: 9.5% }
+
+.icon {
+    position: relative;
+    width: 180px;
+    height: 110px;
+    bottom: -100px;
+    animation: fadein 2s;
+}
+
+.icon2 { left: 2% }
+.icon3 { left: 4% }
+
+.btn {
+    position: absolute;
+    right: 39%;
+    border-radius: 5px;
+    bottom: -150%;
+    border: 2px solid #00ff0000;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px;
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
