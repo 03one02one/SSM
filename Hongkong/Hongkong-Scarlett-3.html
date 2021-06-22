@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>SSM - 로딩페이지</title>
+        <meta http-equiv="refresh" content="5;url=Hongkong-Scarlett-4.html">
+        <style>
+            .loading {
+                position: absolute;
+                top : 50%; left : 50%;
+                transform: translate(-50%, -50%);
+                background-size: 1200px;
+                width:1200px; height:730px;
+                background-image: url('img/Scarlet.png');
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            .container {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+        </style>
+    </head>
+    <body style="background-color:rgb(233, 247, 255); overflow-x: hidden;" onload="javascript:window_onload()">
+        <div class="loading">
+            <div class="container">
+                <div class="spinner" style="color: gray">
+                    <i class="fas fa-spinner fa-3x fa-spin"></i>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
