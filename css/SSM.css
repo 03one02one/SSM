@@ -1,6 +1,7 @@
 .text {
     position: relative;
     text-align: center;
+    padding: 20px;
     border: 1px solid #00ff0000;
     animation: fadein 2s;
 }
@@ -21,7 +22,7 @@
 
 .lanking {
     position: absolute;
-    bottom: -100%;
+    bottom: -50%;
     font-size: 20px;
     font-weight: 600;
     color: rgb(0, 102, 255);
@@ -34,7 +35,7 @@
 
 .country {
     position: absolute;
-    bottom: -123%;
+    bottom: -63%;
     font-size: 30px;
     font-weight: 600;
     animation: fadein 2s;
@@ -46,7 +47,7 @@
 
 .result {
     position: absolute;
-    bottom: -140%;
+    bottom: -80%;
     font-size: 18px;
     font-weight: 600;
     color: gray;
@@ -61,7 +62,7 @@
     position: relative;
     width: 180px;
     height: 110px;
-    bottom: -100px;
+    bottom: -60px;
     animation: fadein 2s;
 }
 
@@ -72,7 +73,7 @@
     position: absolute;
     right: 39%;
     border-radius: 5px;
-    bottom: -150%;
+    bottom: -60%;
     border: 2px solid #00ff0000;
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
