@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="page-enter" content="blendTrans(duration=0.3)">
+        <meta http-equiv="page-exit" content="blendTrans(duration=0.3)">
+        <title>SSM - 타워브리지에서 사진!</title>
+        <style>
+            .item {
+                position: relative;
+                padding: 13% 0 0 41%;
+                z-index: 2; 
+            }
+            .bg {
+                position: absolute;
+                top : 50%; left : 50%;
+                transform: translate(-50%, -50%);
+                width:1200px; height:740px;
+                opacity: 0.7;
+            }
+
+            .name {
+                position: absolute;
+                right: 60%;
+                bottom: -2.5%;
+                font-size: 18px;
+                font-weight: 600;
+                padding: 10px 10px;
+                width: 85px; height:16px;
+                text-align: center;
+                border-radius: 10px 10px 0px 0px;
+                background-color: black;
+                color:white;
+            }
+
+            .text {
+                position: absolute;
+                right: 39%;
+                bottom: -130%;
+                font-size: 18px;
+                font-weight: 600;
+                padding: 10px 0px;
+                background-color: rgba(0, 0, 0, .8);
+                border: 0px;
+                width: 350px; height: 80px;
+                text-align: center;
+                border-radius: 15px;
+                padding-top: 30px;
+                line-height:180%;
+                color:white;
+            }
+        </style>
+    </head>
+    <body style="background-color:rgb(233, 247, 255); overflow-x: hidden; overflow-y: hidden;">
+        <div class="item">
+            <p class="text">Of course!<br>(물론이죠!)</p>
+        </div>
+        <input type="image" class="bg" src="img/Bridge.png" onclick="location.href='Bridge-7.html'">
+    </body>
+</html>
