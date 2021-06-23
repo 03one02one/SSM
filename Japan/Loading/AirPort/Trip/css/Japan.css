@@ -9,6 +9,7 @@
 .item {
     position: relative;
     padding: 13% 0 0 41%;
+    /* border: 1px solid red; */
     z-index: 2; 
 }
 
@@ -188,4 +189,15 @@
     position:absolute;
     top:10px;
     left:-15px;
+}
+
+.before {
+    position:absolute; 
+    height: 220px;
+}
+
+.Masterpiece {
+    position:absolute; 
+    height: 220px;
+    animation: fadein 2s;
 }
