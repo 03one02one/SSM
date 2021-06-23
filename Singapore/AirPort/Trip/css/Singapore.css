@@ -1,0 +1,190 @@
+.bg {
+    position: absolute;
+    top : 50%; left : 50%;
+    transform: translate(-50%, -50%);
+    width:1200px; height:740px;
+}
+
+.item {
+    position: relative;
+    padding: 13% 0 0 41%;
+    z-index: 2; 
+}
+
+.next {
+    position:absolute; 
+    background-color:rgba(0, 0, 0, .8);
+    border:0px transparent solid;
+    font-size: 20px;
+    width: 180px;
+    height: 65px;
+    border-radius: 20px;
+    color:white;
+    animation: fadein 2s;
+}
+.next1 { top:500px; left:750px; }
+
+.next2 { top:500px; left:1020px; }
+
+
+.text {
+    position: absolute;
+    right: 39%;
+    bottom: -130%;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0px;
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    width: 350px; height:100px;
+    padding-top: 40px;
+    line-height:180%;
+    text-align: center;
+    color:black;
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+.words {
+    display: inline-block;
+    position:relative; 
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .7);
+    border-color: rgba(0, 0, 0, .7);
+    border-style: solid;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    color:rgba(0, 0, 0, .7);
+    padding: 10px;
+    animation: fadein 3s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-fill-mode: both;
+}
+
+.words1 {
+    line-height:180%; width: 180px; height: 110px; 
+    padding-top: 45px; bottom: 30px; left: 450px;
+    animation-delay: 1s;
+}
+
+.words2 {
+    line-height:180%; width: 250px; height: 150px; 
+    padding-top: 60px; bottom: -30px; right: 550px;
+    animation-delay: 2s;
+}
+
+.words3 {
+    line-height:180%; width: 180px; height: 110px; 
+    padding-top: 50px; bottom: -195px; right: 800px;
+    animation-delay: 3s;
+}
+
+.words4 {
+    line-height:180%; width: 200px; height: 120px; 
+    padding-top: 60px; top: 150px; right: 180px;
+    animation-delay: 4s;
+}
+
+@keyframes wiggle {
+    0% { margin-left: 0px;}
+    100% {margin-left: 15px;}
+}
+
+.move {
+    display: inline-block;
+    animation: wiggle 0.11s linear 0s alternate;
+    animation-iteration-count: 16;
+}
+
+.kakao {
+    bottom: 30%;
+    right: 15%;
+    animation: fadein 2s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-fill-mode: both;
+}
+
+.circle {
+    bottom: 70%;
+    right: 14%;
+    background-color:red;
+    width:25px;
+    height:22px;
+    border-radius:75px;
+    text-align:center;
+    padding-top: 3px;
+    font-size:13px;
+    font-weight: 600;
+    color: white;
+    animation-delay: 2s;
+}
+
+.think {
+    position:relative; 
+    top:210px;
+    left : 560px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0px;
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    width: 400px; height:140px;
+    padding-top: 50px;
+    line-height:180%;
+    text-align: center;
+    color:black;
+    animation-delay: 3.5s;
+}
+
+.name {
+    position: absolute;
+    right: 60%;
+    bottom: -8%;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 10px;
+    width: 85px; height:16px;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+    background-color: black;
+    color:white;
+}
+
+.balloon {
+    position:absolute;
+    bottom: -150%;
+    right: 36%;
+    margin: 50px;
+    width:400px;
+    height:120px;
+    background:white;
+    text-align: center;
+    line-height:160%;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 30px;
+    border-radius: 10px;
+    animation: fadein 2s;
+}
+
+.balloon:after {
+    border-top:15px solid white;
+    border-left: 15px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    content:"";
+    position:absolute;
+    top:10px;
+    left:-15px;
+}
